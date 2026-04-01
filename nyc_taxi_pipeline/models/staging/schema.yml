@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw
+    database: nyc-taxi-dbt-devia
+    schema: raw
+    tables:
+      - name: yellow_taxi_trips
+
+models:
+  - name: stg_yellow_taxi_trips
+    description: "Données nettoyées et enrichies des taxis jaunes NYC"
+    columns:
+      - name: tpep_pickup_datetime
+        description: "Date et heure de prise en charge"
+        tests:
+          - not_null
+
+      - name: tpep_dropoff_datetime
+        description: "Date et heure de dépose"
+        tests:
+          - not_null
+
+      - name: fare_amount
+        description: "Montant du tarif de base"
+        tests:
+          - not_null
+
+      - name: PULocationID
+        description: "Zone de prise en charge"
+        tests:
+          - not_null
+      
+      - name: payment_type
+        description: "Type de paiement"
+        tests:
+          - accepted_values:
+              values: [0, 1, 2, 3, 4, 5]
+              quote: false
