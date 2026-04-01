@@ -1,0 +1,40 @@
+name: Monthly NYC Taxi Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Le 1er de chaque mois à minuit
+  workflow_dispatch:      # Permet de déclencher manuellement
+
+jobs:
+  run_pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
+      - name: Install dependencies
+        run: |
+          source $HOME/.local/bin/env
+          cd nyc_taxi_pipeline
+          uv sync
+
+      - name: Run DBT
+        run: |
+          source $HOME/.local/bin/env
+          cd nyc_taxi_pipeline
+          uv run dbt run
+          uv run dbt test
