@@ -36,5 +36,5 @@ jobs:
       - name: Run DBT
         run: |
           cd nyc_taxi_pipeline
-          uv run dbt run
-          uv run dbt test
+          uv run dbt run --profiles-dir .
+          uv run dbt test --profiles-dir .
