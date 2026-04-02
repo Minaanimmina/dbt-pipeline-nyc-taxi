@@ -19,6 +19,9 @@ models:
     staging:
       +materialized: table
       +schema: staging
-    final:
+    intermediate:
+      +materialized: table
+      +schema: staging
+    marts:
       +materialized: table
       +schema: final

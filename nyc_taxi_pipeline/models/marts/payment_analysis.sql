@@ -12,5 +12,5 @@ SELECT
     AVG(tip_amount) AS pourboire_moyen,
     AVG(pourcentage_pourboire) AS taux_pourboire_moyen,
     SUM(total_amount) AS revenus_totaux
-FROM {{ ref('stg_yellow_taxi_trips') }}
+FROM {{ ref('int_trip_metrics') }}
 GROUP BY payment_type

@@ -21,7 +21,7 @@ SELECT
         WHEN 7 THEN '6-Samedi'
         WHEN 1 THEN '7-Dimanche'
     END AS jour_semaine
-FROM {{ ref('stg_yellow_taxi_trips') }}
+FROM {{ ref('int_trip_metrics') }}
 WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) IN (2024, 2025)
 GROUP BY
     DATE(tpep_pickup_datetime),

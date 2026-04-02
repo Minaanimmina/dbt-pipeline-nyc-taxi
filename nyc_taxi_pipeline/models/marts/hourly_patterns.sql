@@ -13,5 +13,5 @@ SELECT
         WHEN heure_pickup BETWEEN 20 AND 23 THEN 'Soirée'
         ELSE 'Nuit'
     END AS periode
-FROM {{ ref('stg_yellow_taxi_trips') }}
+FROM {{ ref('int_trip_metrics') }}
 GROUP BY heure_pickup

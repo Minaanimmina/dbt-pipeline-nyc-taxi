@@ -5,7 +5,7 @@ SELECT
     SUM(total_amount) AS revenus_totaux,
     AVG(total_amount) AS revenu_moyen_par_trajet,
     AVG(pourcentage_pourboire) AS taux_pourboire_moyen
-FROM {{ ref('stg_yellow_taxi_trips') }}
+FROM {{ ref('int_trip_metrics') }}
 WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) IN (2024, 2025)
 GROUP BY FORMAT_DATE('%Y-%m', DATE(tpep_pickup_datetime))
 ORDER BY mois
