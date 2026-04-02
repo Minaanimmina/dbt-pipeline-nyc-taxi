@@ -1,5 +1,6 @@
 SELECT
     heure_pickup,
+    FORMAT('%02d', heure_pickup) AS heure_label,
     COUNT(*) AS demande,
     SUM(total_amount) AS revenus,
     AVG(total_amount) AS revenu_moyen,

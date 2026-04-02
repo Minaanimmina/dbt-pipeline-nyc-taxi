@@ -11,10 +11,20 @@ SELECT
         WHEN EXTRACT(DAYOFWEEK FROM tpep_pickup_datetime) IN (1, 7)
         THEN 'Weekend'
         ELSE 'Semaine'
-    END AS type_jour
+    END AS type_jour,
+    CASE EXTRACT(DAYOFWEEK FROM tpep_pickup_datetime)
+        WHEN 2 THEN '1-Lundi'
+        WHEN 3 THEN '2-Mardi'
+        WHEN 4 THEN '3-Mercredi'
+        WHEN 5 THEN '4-Jeudi'
+        WHEN 6 THEN '5-Vendredi'
+        WHEN 7 THEN '6-Samedi'
+        WHEN 1 THEN '7-Dimanche'
+    END AS jour_semaine
 FROM {{ ref('stg_yellow_taxi_trips') }}
 WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) IN (2024, 2025)
 GROUP BY
     DATE(tpep_pickup_datetime),
     FORMAT_DATE('%Y-%m', DATE(tpep_pickup_datetime)),
-    type_jour
+    type_jour,
+    jour_semaine
