@@ -1,0 +1,118 @@
+[0m13:21:13.132805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c109c377230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c109d453530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c109bf1bd40>]}
+
+
+============================== 13:21:13.177802 | 76eac41a-73ec-4b7f-9b3a-5aeb6a30703f ==============================
+[0m13:21:13.177802 [info ] [MainThread]: Running with dbt=1.11.7
+[0m13:21:13.179388 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'empty': 'None', 'partial_parse': 'True', 'log_path': 'logs', 'write_json': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'invocation_command': 'dbt init nyc_taxi_pipeline', 'static_parser': 'True', 'debug': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'fail_fast': 'False', 'no_print': 'None', 'profiles_dir': '/home/mina/.dbt', 'introspect': 'True', 'printer_width': '80'}
+[0m13:21:13.518849 [info ] [MainThread]: Creating dbt configuration folder at /home/mina/.dbt
+[0m13:21:13.551773 [debug] [MainThread]: Starter project path: /mnt/c/Users/cracm/Documents/Projets Simplon/dbt-pipeline-nyc-taxi/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m13:21:13.778392 [info ] [MainThread]: 
+Your new dbt project "nyc_taxi_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:21:13.779425 [info ] [MainThread]: Setting up your profile.
+[0m13:24:59.842533 [info ] [MainThread]: Profile nyc_taxi_pipeline written to /home/mina/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:24:59.845392 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 249.28325, "process_in_blocks": "132760", "process_kernel_time": 2.220208, "process_mem_max_rss": "217640", "process_out_blocks": "8", "process_user_time": 5.951652}
+[0m13:24:59.846777 [debug] [MainThread]: Command `dbt init` succeeded at 13:24:59.846661 after 249.28 seconds
+[0m13:24:59.847531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c109bf3cc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1078f71df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c106a844200>]}
+[0m13:24:59.848340 [debug] [MainThread]: Flushing usage events
+[0m13:25:00.396627 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:30:59.450680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9c72a9f230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9c72e8fd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9c729851f0>]}
+
+
+============================== 13:30:59.457927 | 0674d9bd-3429-4be2-8ff8-a06570be64a5 ==============================
+[0m13:30:59.457927 [info ] [MainThread]: Running with dbt=1.11.7
+[0m13:30:59.458940 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'partial_parse': 'True', 'log_path': 'logs', 'log_format': 'default', 'log_cache_events': 'False', 'empty': 'None', 'printer_width': '80', 'invocation_command': 'dbt debug', 'write_json': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'debug': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'no_print': 'None', 'warn_error': 'None', 'profiles_dir': '/home/mina/.dbt', 'introspect': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m13:30:59.582504 [info ] [MainThread]: dbt version: 1.11.7
+[0m13:30:59.583600 [info ] [MainThread]: python version: 3.12.3
+[0m13:30:59.584407 [info ] [MainThread]: python path: /mnt/c/Users/cracm/Documents/Projets Simplon/dbt-pipeline-nyc-taxi/.venv/bin/python
+[0m13:30:59.585165 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m13:31:12.871159 [info ] [MainThread]: Using profiles dir at /home/mina/.dbt
+[0m13:31:12.872511 [info ] [MainThread]: Using profiles.yml file at /home/mina/.dbt/profiles.yml
+[0m13:31:12.873806 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/cracm/Documents/Projets Simplon/dbt-pipeline-nyc-taxi/dbt_project.yml
+[0m13:31:12.874795 [info ] [MainThread]: adapter type: bigquery
+[0m13:31:12.875872 [info ] [MainThread]: adapter version: 1.11.1
+[0m13:31:12.877151 [info ] [MainThread]: Configuration:
+[0m13:31:12.878660 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:31:12.879939 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:31:12.881012 [info ] [MainThread]: Required dependencies:
+[0m13:31:12.881882 [debug] [MainThread]: Executing "git --help"
+[0m13:31:12.886072 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:31:12.886990 [debug] [MainThread]: STDERR: "b''"
+[0m13:31:12.887961 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:31:12.888817 [info ] [MainThread]: Connection:
+[0m13:31:12.889827 [info ] [MainThread]:   method: oauth
+[0m13:31:12.890709 [info ] [MainThread]:   database: nyc-taxi-dbt-devia 
+[0m13:31:12.891550 [info ] [MainThread]:   execution_project: nyc-taxi-dbt-devia 
+[0m13:31:12.892410 [info ] [MainThread]:   schema: staging
+[0m13:31:12.893351 [info ] [MainThread]:   location: US
+[0m13:31:12.894488 [info ] [MainThread]:   priority: interactive
+[0m13:31:12.895412 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m13:31:12.896549 [info ] [MainThread]:   impersonate_service_account: None
+[0m13:31:12.897402 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m13:31:12.898476 [info ] [MainThread]:   job_retries: 1
+[0m13:31:12.899460 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m13:31:12.900678 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m13:31:12.901594 [info ] [MainThread]:   timeout_seconds: 300
+[0m13:31:12.902638 [info ] [MainThread]:   client_id: None
+[0m13:31:12.903725 [info ] [MainThread]:   token_uri: None
+[0m13:31:12.904906 [info ] [MainThread]:   compute_region: None
+[0m13:31:12.905865 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m13:31:12.906781 [info ] [MainThread]:   gcs_bucket: None
+[0m13:31:12.907686 [info ] [MainThread]:   dataproc_batch: None
+[0m13:31:12.909546 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m13:31:20.691237 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m13:31:20.692258 [debug] [MainThread]: On debug: select 1 as id
+[0m13:31:20.693690 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:31:21.575312 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nyc-taxi-dbt-devia &j=bq:US:252b8d9a-c629-4683-a543-5dda01d6c8cf&page=queryresults
+[0m13:31:21.578433 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:31:21.579685 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:31:21.580586 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </mnt/c/Users/cracm/Documents/Projets Simplon/dbt-pipeline-nyc-taxi/dbt_project.yml> not found
+
+[0m13:31:21.581526 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Invalid project ID 'nyc-taxi-dbt-devia '. Project IDs must contain 6-63 lowercase letters, digits, or dashes. Some project IDs also include domain name separated by a colon. IDs must start with a letter and may not end with a dash.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:31:21.582914 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 24.18438, "process_in_blocks": "134880", "process_kernel_time": 1.834818, "process_mem_max_rss": "211144", "process_out_blocks": "0", "process_user_time": 3.71267}
+[0m13:31:21.584190 [debug] [MainThread]: Command `dbt debug` failed at 13:31:21.584087 after 24.19 seconds
+[0m13:31:21.585231 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:31:21.586507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9c72305a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9c44a0ecc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9c45917740>]}
+[0m13:31:21.587783 [debug] [MainThread]: Flushing usage events
+[0m13:31:22.116575 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:57:21.170363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721a0ab76330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721a0b4f0620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721a0b46e2a0>]}
+
+
+============================== 08:57:21.184626 | c9f8f613-a112-4cbd-82b4-9494970d4077 ==============================
+[0m08:57:21.184626 [info ] [MainThread]: Running with dbt=1.11.7
+[0m08:57:21.185899 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '.', 'log_cache_events': 'False', 'static_parser': 'True', 'no_print': 'None', 'empty': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'version_check': 'True', 'target_path': 'None', 'introspect': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt docs generate --profiles-dir .', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'log_path': 'logs', 'partial_parse': 'True', 'debug': 'False', 'use_colors': 'True'}
+[0m08:57:21.187139 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/cracm/Documents/Projets Simplon/dbt-pipeline-nyc-taxi/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:57:21.189703 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.071823545, "process_in_blocks": "31344", "process_kernel_time": 0.690593, "process_mem_max_rss": "100696", "process_out_blocks": "0", "process_user_time": 1.137205}
+[0m08:57:21.190527 [debug] [MainThread]: Command `dbt docs generate` failed at 08:57:21.190435 after 0.07 seconds
+[0m08:57:21.191241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721a0aee1370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721a0a5e50d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721a0a967fe0>]}
+[0m08:57:21.191927 [debug] [MainThread]: Flushing usage events
+[0m08:57:21.690095 [debug] [MainThread]: An error was encountered while trying to flush usage events

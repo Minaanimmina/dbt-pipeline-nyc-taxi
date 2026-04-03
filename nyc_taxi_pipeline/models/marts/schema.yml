@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: daily_summary
+    description: "Résumé quotidien des trajets NYC Taxi — métriques agrégées par jour de pickup"
+
+  - name: monthly_summary
+    description: "Résumé mensuel des trajets NYC Taxi — tendances et évolutions mois par mois"
+
+  - name: hourly_patterns
+    description: "Patterns de demande par heure de la journée — analyse des heures de pointe"
+
+  - name: zone_analysis
+    description: "Analyse par zone géographique de départ — popularité et rentabilité par zone TLC"
+
+  - name: payment_analysis
+    description: "Analyse par mode de paiement — répartition carte/espèces et patterns de pourboires"
+
+  - name: weekly_revenue
+    description: "Revenus et volumes par jour de la semaine — comparaison semaine vs weekend"
+
+  - name: fact_trips
+    description: "Table de faits principale — données au niveau du trajet individuel (83M lignes)"
+
+  - name: global_kpis
+    description: "KPIs globaux agrégés sur l'ensemble de la période 2024-2025 — source unique pour les scorecards"
