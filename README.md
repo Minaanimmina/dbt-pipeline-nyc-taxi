@@ -413,7 +413,7 @@ Le dashboard Looker Studio expose les KPIs clés du projet en 5 pages interactiv
 | **Vue d'ensemble** | Évolution mensuelle, répartition semaine/weekend |
 | **Analyse temporelle** | Patterns horaires, distance par jour de semaine |
 | **Analyse financière** | Modes de paiement, pourboires, rentabilité |
-| **Analyse géographique** | Top 10 zones, évolution quotidienne, revenus par zone |
+| **Analyse géographique** | Top 10 zones, volume par borough |
 
 ### KPIs principaux
 
