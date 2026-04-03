@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_trip_metrics
+    description: "Enrichissement des données nettoyées — catégorisations métier (distance, période temporelle, jour de semaine)"
